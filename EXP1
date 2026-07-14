@@ -1,7 +1,9 @@
 # Experiment 1: Linear Search (Iterative)
+print("EXPERIMENT 1")
+print("LINEAR SEARCH (ITERATIVE)")
 print("NAME    : R SARVESH")
 print("REG. NO : 192521143")
-print("-" * 35)
+print("-" * 40)
 
 arr = [10, 25, 30, 45, 50]
 key = int(input("enter the key: "))
