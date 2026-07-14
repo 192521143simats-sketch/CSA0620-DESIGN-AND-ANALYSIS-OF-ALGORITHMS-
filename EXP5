@@ -1,0 +1,53 @@
+# Experiment 5: Matrix Multiplication
+
+print("EXPERIMENT 5")
+print("MATRIX MULTIPLICATION")
+print("NAME    : R SARVESH")
+print("REG. NO : 192521143")
+print("-" * 40)
+
+n = int(input("Enter the order of the square matrix: "))
+
+# Matrix A
+A = []
+print("\nEnter the elements of Matrix A:")
+for i in range(n):
+    row = []
+    for j in range(n):
+        row.append(int(input(f"A[{i}][{j}] = ")))
+    A.append(row)
+
+# Matrix B
+B = []
+print("\nEnter the elements of Matrix B:")
+for i in range(n):
+    row = []
+    for j in range(n):
+        row.append(int(input(f"B[{i}][{j}] = ")))
+    B.append(row)
+
+# Matrix C initialized with zeros
+C = []
+for i in range(n):
+    row = []
+    for j in range(n):
+        row.append(0)
+    C.append(row)
+
+# Matrix Multiplication
+for i in range(n):
+    for j in range(n):
+        for k in range(n):
+            C[i][j] = C[i][j] + A[i][k] * B[k][j]
+
+print("\nMatrix A:")
+for row in A:
+    print(row)
+
+print("\nMatrix B:")
+for row in B:
+    print(row)
+
+print("\nMatrix C (Resultant Matrix):")
+for row in C:
+    print(row)
