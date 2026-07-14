@@ -1,0 +1,18 @@
+# Experiment 1: Linear Search (Iterative)
+print("NAME    : R SARVESH")
+print("REG. NO : 192521143")
+print("-" * 35)
+
+arr = [10, 25, 30, 45, 50]
+key = int(input("enter the key: "))
+
+found = False
+
+for i in range(len(arr)):
+    if arr[i] == key:
+        print("Key found at index", i)
+        found = True
+        break
+
+if not found:
+    print("Key not found")
