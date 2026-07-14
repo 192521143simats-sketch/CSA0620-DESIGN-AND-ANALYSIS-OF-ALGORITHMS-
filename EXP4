@@ -1,0 +1,31 @@
+# Experiment 4: Fibonacci Series
+
+print("EXPERIMENT 4")
+print("FIBONACCI SERIES")
+print("NAME    : R SARVESH")
+print("REG. NO : 192521143")
+print("-" * 40)
+
+n = int(input("enter a number: "))
+
+# Iterative
+fib = []
+a, b = 0, 1
+
+for i in range(n):
+    fib.append(a)
+    a, b = b, a + b
+
+print("Iterative Fibonacci :", fib)
+
+# Recursive
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+fib_rec = []
+for i in range(n):
+    fib_rec.append(fibonacci(i))
+
+print("Recursive Fibonacci :", fib_rec)
